@@ -4,7 +4,7 @@ ifstream in("go.inp");
 ofstream out("go.out");
 char chess[20][20];
 int n;
-int bw[2], ir_bw[2];
+int bw[2], ir_bw[2], r_bw[2];
 int dx[] = { 1,-1,0,0 };
 int dy[] = { 0,0,1,-1 };
 int ret; //점의 개수
@@ -22,7 +22,7 @@ void bfs(int x, int y) {
 			if (kx >= 0 && ky >= 0 && kx < n && ky < n) {
 				if (chess[kx][ky] == 'B')bw[0]++;
 				else if (chess[kx][ky] == 'W')bw[1]++;
-				else if(chess[kx][ky]=='.'){
+				else if (chess[kx][ky] == '.') {
 					ret++;
 					chess[kx][ky] = 1;
 					q.push(make_pair(kx, ky));
