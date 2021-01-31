@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+ï»¿#include<bits/stdc++.h>
 using namespace std;
 
 bool cmp(pair<int, int> x, pair<int, int> y) {
@@ -22,19 +22,19 @@ int solution(int X, vector<int> A) {
 
 	for (int i = 0; i < A.size(); i++) {
 
-		arr.push_back({A[i], i});
+		arr.push_back({ A[i], i });
 	}
 
-	sort(arr.begin(), arr.end() , cmp);
+	sort(arr.begin(), arr.end(), cmp);
 
 
-	int cnt = 0; //À§Ä¡
+	int cnt = 0; 
 	int seconds = -1;
 
 	for (int i = 0; i < arr.size(); i++) {
 
-		int k = arr[i].first; //À§Ä¡
-		int k2 = arr[i].second; // ½Ã°£
+		int k = arr[i].first; 
+		int k2 = arr[i].second; 
 
 		if (cnt == k) {
 			continue;
@@ -51,12 +51,12 @@ int solution(int X, vector<int> A) {
 		if (cnt == X) break;
 	}
 
-	if (cnt != X ) seconds = -1;
+	if (cnt != X) seconds = -1;
 
 
 	return seconds;
 }
 
 int main() {
-	cout << solution(2, {1,1,1,1 });
+	cout << solution(2, { 1,1,1,1 });
 }
