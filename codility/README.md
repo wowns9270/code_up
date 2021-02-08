@@ -201,6 +201,6 @@ Brackets보다 한단계 쉬운 문제 stack을 이용해 해결한다.
 
 ```
 봉우리가 각 구간에 들어가는지 확인하는 작업을 효율적으로 코드를 짜기 힘들었는데
-![image](https://user-images.githubusercontent.com/46587806/107214971-09d6d680-6a4e-11eb-8c4c-82e8334cbc5c.png)
 이런방식이 아름다웠다.
 ```
+![image](https://user-images.githubusercontent.com/46587806/107214971-09d6d680-6a4e-11eb-8c4c-82e8334cbc5c.png)
